@@ -1,0 +1,4 @@
+aiogram==2.22.2
+openpyxl==3.0.10
+peewee==3.15.3
+python-dotenv==0.21.0
