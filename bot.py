@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=["start"])
 async def start(message: types.Message):
     await message.bot.send_message(message.from_user.id, 
-                                   f"Добро пожаловать, {message.from_user.first_name}.Выбери подборку фильмов, которая тебе по душе.", 
+                                   f"Добро пожаловать, {message.from_user.first_name}. Выбери подборку фильмов, которая тебе по душе.", 
                                    reply_markup=keyboard_sets)
 
 @dp.message_handler(content_types=["text"])

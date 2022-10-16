@@ -58,7 +58,7 @@ def get_random_keybord():
             for i in range(len(category)):
                 random_movie.append(category[i])
         random_number = randint(0, len(random_movie))
-        btn_random_movie = InlineKeyboardButton(text=random_movie[random_number].name, 
+        btn_random_movie = InlineKeyboardButton(text=f"{random_movie[random_number].name} ({random_movie[random_number].year})", 
                                                 url=random_movie[random_number].link)
         random_movie_keybord.add(btn_random_movie)
     return random_movie_keybord
